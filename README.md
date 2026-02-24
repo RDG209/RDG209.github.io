@@ -2,3 +2,4 @@
 
 # [Website] (https://RDG209.github.io/RegistrationForm.html?nocache=1)
 
+# [Thank You Page] (https://RDG209.github.io/thankyou.html)
