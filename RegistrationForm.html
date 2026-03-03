@@ -115,6 +115,25 @@
             <label for="company">Organization Name <span class="required">*</span></label>
             <input id="company" maxlength="40" name="company" size="20" type="text" required placeholder="e.g.: Dunder Mifflin Inc."/>
 
+            <!-- Description -->
+            <label for="description">Organization Description</label>
+            <textarea id="description" name="description" rows="4" 
+                placeholder="Tell us about your organization's mission and activities..."></textarea>
+            
+            <!-- Accepts Donations -->
+            <label>
+                <input type="checkbox" name="Accepts_Donations__c" value="1" />
+                This organization accepts donations
+            </label>
+            
+            <!-- Donation URL (conditional) -->
+            <label for="donation_url">Donation Page URL</label>
+            <input id="donation_url" name="Donation__c" type="url" 
+                placeholder="https://www.example.com/donate" />
+            
+            <!-- Status - Auto-set to 'Active' via trigger, or add: -->
+            <input type="hidden" name="Status__c" value="Pending" />
+
             <label for="street">Street Address <span class="required">*</span></label>
             <textarea id="street" name="street" rows="2" required placeholder="197 W. Second St.&#10;Apt 4"></textarea>
 
@@ -122,7 +141,7 @@
             <input type="text" id="city" name="city" required placeholder="Pomona">
 
             <label for="state">State <span class="required">*</span></label>
-            <select id="state" name="State__c" required>
+            <select id="state" name="state" required>
                 <option value="">Select State</option>
                 <option value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
@@ -183,7 +202,7 @@
             <input id="url" maxlength="80" name="url" size="20" type="url" placeholder="https://www.example.com" />
 
             <label for="Category__c">Category <span class="required">*</span></label>
-            <select id="Category__c" name="Category__c" title="Category" required>
+            <select id="Category__c" name="Category" title="Category" required>
                 <option value="">--Select Category--</option>
                 <option value="Art Gallery/Walk">Art Gallery/Walk</option>
                 <option value="Cultural Site">Cultural Site</option>
@@ -191,6 +210,7 @@
                 <option value="Library/Books">Library/Books</option>
                 <option value="Museum">Museum</option>
             </select>
+            
 
             <input type="submit" name="submit" value="Register Organization">
 
