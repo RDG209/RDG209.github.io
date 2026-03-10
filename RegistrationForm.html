@@ -205,7 +205,7 @@
             <input id="url" maxlength="80" name="url" size="20" type="url" placeholder="https://www.example.com" />
 
             <label for="Category__c">Category <span class="required">*</span></label>
-            <select id="Category__c" name="Category" title="Category" required>
+            <select id="Category__c" name="00Ng500000A0ccE" title="Category" required>
                 <option value="">--Select Category--</option>
                 <option value="Art Gallery/Walk">Art Gallery/Walk</option>
                 <option value="Cultural Site">Cultural Site</option>
@@ -213,7 +213,27 @@
                 <option value="Library/Books">Library/Books</option>
                 <option value="Museum">Museum</option>
             </select>
-            
+
+            <!-- ==================== PRIMARY CONTACT (STAFF MEMBER) ==================== -->
+            <div class="section-header">Primary Contact Person</div>
+            <p style="font-size: 0.9em; color: #666; margin-top: 0;">This person will be added as the first staff member and primary contact for your organization.</p>
+
+            <label for="last_name">Full Name <span class="required">*</span></label>
+            <input id="last_name" name="last_name" type="text" required placeholder="e.g.: Dr. Jane Smith, Director of Marketing"/>
+
+            <label for="staff_role">Your Role/Title <span class="required">*</span></label>
+            <input id="staff_role" name="Title" type="text" required placeholder="e.g.: Executive Director, Curator, Volunteer Coordinator"/>
+
+            <label for="staff_email">Your Email <span class="required">*</span></label>
+            <input id="staff_email" name="00Ng500000Bb6hd" type="email" required placeholder="you@example.com"/>
+
+            <label for="staff_bio">Brief Bio (optional)</label>
+            <textarea id="staff_bio" name="00Ng500000Bb6hc" rows="3" placeholder="Tell us about your background and connection to this organization..."></textarea>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="HasOptedOutOfEmail" value="1" checked/>
+                <span>This person is in a leadership position</span>
+            </label>
 
             <input type="submit" name="submit" value="Register Organization">
 
