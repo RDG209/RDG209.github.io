@@ -4,11 +4,27 @@
     <title>Thank You - Humanities Center</title>
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f5f5 0%, #764ba2 100%);
         }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
         .message {
             background: white;
             padding: 40px;
@@ -16,15 +32,34 @@
             max-width: 500px;
             margin: 0 auto;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
         }
+
         h1 { color: #667eea; }
+
+        a {
+            color: #667eea;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #5a6fd6;
+        }
     </style>
 </head>
 <body>
+
+    <div class="header">
+        <h1>Humanities Center</h1>
+        <p>Register your arts or cultural organization</p>
+    </div>
+
     <div class="message">
         <h1>Thank You!</h1>
         <p>Your submission has been received and is pending review.</p>
         <p><a href="https://orgfarm-bbc686a8a6-dev-ed--c.develop.vf.force.com/apex/InstitutionDirectory">← Back to Directory</a></p>
     </div>
+
 </body>
 </html>
